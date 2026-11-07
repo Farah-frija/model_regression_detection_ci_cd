@@ -52,9 +52,11 @@ src/email_classifier/
     models.py                      PromptConfig, EmailClassification,
                                    ClassificationResult, ClassifierError
     classifier.py                  DEFAULT_PROMPT and classify_email()
+    __main__.py                    command-line entry point
     __init__.py                    public exports
 tests/
     test_classifier.py             unit tests with a fake Gemini client
+    test_main.py                   tests for the command-line entry point
 ```
 
 ## Setup
@@ -93,6 +95,32 @@ env file that belongs in git.
 
 ## Usage
 
+### Command line
+
+The entry point is `email_classifier` run as a module. Pass the email as
+arguments, or pipe it on stdin:
+
+```powershell
+.venv\Scripts\python.exe -m email_classifier "I was charged twice this month."
+
+"I forgot my password." | .venv\Scripts\python.exe -m email_classifier
+```
+
+Example output:
+
+```
+Category:    billing
+Summary:     The customer was charged twice this month.
+Model:       gemini-3.5-flash-lite (prompt 0.1.0)
+Latency:     1234 ms
+Tokens:      111 (79 in, 32 out)
+```
+
+The exit code is `0` on success and `1` on an error, such as a missing API key
+or a blocked prompt. Errors go to stderr.
+
+### Python
+
 ```python
 import asyncio
 from email_classifier import classify_email
@@ -130,6 +158,7 @@ so they run offline and do not need an API key. They cover:
 - the prompt config (model, system prompt, temperature, schema) reaches the API
 - blocked prompts, empty responses, schema mismatches and API errors raise `ClassifierError`
 - the category and temperature limits are enforced
+- the command-line entry point prints the result, reads from stdin, and returns exit code 1 on errors
 - a missing API key raises `ClassifierError`, and `GEMINI_API_KEY` is read from the environment
 
 Nothing in the test suite calls the live Gemini API yet.
