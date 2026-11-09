@@ -1,0 +1,19 @@
+version: "0.1.0"
+timestamp: "2026-11-09T00:00:00Z"
+system_prompt: >-
+  You classify customer support emails. Choose exactly one category:
+  billing (payments, invoices, refunds, pricing),
+  technical (bugs, errors, outages, how-to for the product),
+  account (login, password, profile, access, deletion),
+  or general (anything else). Then write a one-sentence summary of the email.
+model: gemini-3.5-flash-lite
+temperature: 0.0
+examples:
+  - email_text: I was charged twice this month.
+    expected_output:
+      category: billing
+      summary: The customer was charged twice this month.
+  - email_text: I cannot reset my password.
+    expected_output:
+      category: account
+      summary: The customer cannot reset their password.

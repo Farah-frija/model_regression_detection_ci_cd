@@ -7,18 +7,9 @@ from google.genai import errors, types
 from pydantic import ValidationError
 
 from .models import ClassificationResult, ClassifierError, EmailClassification, PromptConfig
+from .prompt_loader import load_prompt
 
-DEFAULT_PROMPT = PromptConfig(
-    version="0.1.0",
-    system_prompt=(
-        "You classify customer support emails. Choose exactly one category: "
-        "billing (payments, invoices, refunds, pricing), "
-        "technical (bugs, errors, outages, how-to for the product), "
-        "account (login, password, profile, access, deletion), "
-        "or general (anything else). "
-        "Then write a one-sentence summary of the email."
-    ),
-)
+DEFAULT_PROMPT = load_prompt()
 
 
 def _load_api_key() -> str:

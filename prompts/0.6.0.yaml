@@ -1,0 +1,21 @@
+version: "0.6.0"
+timestamp: "2026-11-09T00:05:00Z"
+system_prompt: >-
+  Read the customer support email and classify it as exactly one of billing,
+  technical, account, or general. Billing covers payments, invoices, refunds,
+  and pricing; technical covers product bugs, errors, outages, and usage
+  questions; account covers login, password, profile, access, and deletion;
+  general covers other topics. Return only the requested structured fields:
+  the category and a concise, factual, one-sentence summary. Do not add fields,
+  explanations, or recommendations.
+model: gemini-3.5-flash-lite
+temperature: 0.0
+examples:
+  - email_text: I was billed after cancelling my subscription.
+    expected_output:
+      category: billing
+      summary: The customer was billed after cancelling their subscription.
+  - email_text: Please delete my account and remove my profile data.
+    expected_output:
+      category: account
+      summary: The customer requests account and profile data deletion.

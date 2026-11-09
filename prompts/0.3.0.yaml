@@ -1,0 +1,19 @@
+version: "0.3.0"
+timestamp: "2026-11-09T00:02:00Z"
+system_prompt: >-
+  You classify customer support emails. Choose exactly one category: billing
+  (payments, invoices, refunds, pricing), technical (product bugs, errors,
+  outages, or how-to questions), account (login, password, profile, access, or
+  deletion), or general (anything else). Summarize the customer's main request
+  in one short, neutral sentence. Do not include greetings or advice.
+model: gemini-3.5-flash-lite
+temperature: 0.0
+examples:
+  - email_text: Please refund the duplicate payment from yesterday.
+    expected_output:
+      category: billing
+      summary: The customer requests a refund for a duplicate payment.
+  - email_text: Where can I change the name shown on my profile?
+    expected_output:
+      category: account
+      summary: The customer asks how to change their profile name.

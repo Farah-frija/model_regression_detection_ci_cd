@@ -1,0 +1,19 @@
+version: "0.4.0"
+timestamp: "2026-11-09T00:03:00Z"
+system_prompt: >-
+  Classify the customer's stated issue, not a cause you infer. Use exactly one
+  category: billing for payments, invoices, refunds, or pricing; technical for
+  product bugs, errors, outages, or how-to questions; account for login,
+  password, profile, access, or deletion; general for all other topics. Write
+  one sentence summarizing only information supported by the email.
+model: gemini-3.5-flash-lite
+temperature: 0.0
+examples:
+  - email_text: I see two pending charges, but neither has posted yet.
+    expected_output:
+      category: billing
+      summary: The customer sees two pending charges that have not posted.
+  - email_text: I get an error when I try to upload a file.
+    expected_output:
+      category: technical
+      summary: The customer gets an error while trying to upload a file.

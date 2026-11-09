@@ -1,0 +1,19 @@
+version: "0.2.0"
+timestamp: "2026-11-09T00:01:00Z"
+system_prompt: >-
+  Classify each customer support email into exactly one category: billing for
+  payments, invoices, refunds, or pricing; technical for product bugs, errors,
+  outages, or usage questions; account for login, password, profile, access, or
+  account deletion; and general for other topics. Return a one-sentence summary
+  that captures the customer's main need.
+model: gemini-3.5-flash-lite
+temperature: 0.0
+examples:
+  - email_text: My invoice includes a charge I do not recognize.
+    expected_output:
+      category: billing
+      summary: The customer is asking about an unrecognized invoice charge.
+  - email_text: The export button crashes whenever I click it.
+    expected_output:
+      category: technical
+      summary: The customer reports that the export button crashes.

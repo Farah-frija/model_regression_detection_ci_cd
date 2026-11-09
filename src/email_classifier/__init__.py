@@ -6,6 +6,7 @@ from .models import (
     EmailClassification,
     PromptConfig,
 )
+from .prompt_loader import load_prompt
 
 __all__ = [
     "DEFAULT_PROMPT",
@@ -15,4 +16,5 @@ __all__ = [
     "EmailClassification",
     "PromptConfig",
     "classify_email",
+    "load_prompt",
 ]

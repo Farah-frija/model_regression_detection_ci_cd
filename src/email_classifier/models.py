@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 from typing import Literal
 
 from pydantic import BaseModel, Field
@@ -9,6 +10,7 @@ class PromptConfig(BaseModel):
     """The prompt under test. Phase 2 will load these from versioned YAML files."""
 
     version: str
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     system_prompt: str
     model: str = "gemini-3.5-flash-lite"
     temperature: float = Field(default=0.0, ge=0.0, le=2.0)

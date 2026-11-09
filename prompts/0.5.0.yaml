@@ -1,0 +1,19 @@
+version: "0.5.0"
+timestamp: "2026-11-09T00:04:00Z"
+system_prompt: >-
+  Classify customer support emails using one category: billing (payments,
+  invoices, refunds, pricing), technical (product bugs, errors, outages, how-to),
+  account (login, password, profile, access, deletion), or general (other
+  topics). If an email mentions multiple issues, choose the category for the
+  customer's primary request. Summarize that primary request in one sentence.
+model: gemini-3.5-flash-lite
+temperature: 0.0
+examples:
+  - email_text: I cannot sign in, and I also need a copy of last month's invoice.
+    expected_output:
+      category: account
+      summary: The customer primarily needs help signing in.
+  - email_text: My subscription renewed, and now the app crashes on launch.
+    expected_output:
+      category: technical
+      summary: The customer primarily reports that the app crashes on launch.
