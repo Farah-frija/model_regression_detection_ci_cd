@@ -1,0 +1,556 @@
+{
+  "dataset_version": "v0.1.0",
+  "total_cases": 50,
+  "cases": [
+    {
+      "id": "TC-0001",
+      "input": "Inquiry on IT Services Hello, I have some general questions regarding your software development process and would appreciate any advice on server administration. The affected product is your IT Consulting Service. I look forward to your guidance and thank you for your support. Regards, <name>.",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer asks general questions about software development and server administration for the IT Consulting Service."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0002",
+      "input": "Request for Billing Correction on Subscription Dear Tech Online Store Customer Support,\\n\\nI hope this message finds you well. I'm writing to express a concern regarding a recent billing issue I experienced with my Google Workspace Business Standard subscription under account number <acc_num>. It appears that I have been incorrectly charged for a service I did not sign up for, and I would like to seek a refund or an adjustment to my account to rectify this issue.\\n\\nOn my invoice dated <invoice_date>, I noticed an unexpected charge for the Google Workspace Business Standard, which surprised me as I neither request this service nor have any requirement for it at this time. I have checked all my account settings and confirmed that there was no such subscription authorized from my end.\\n\\nI kindly ask for your immediate assistance in addressing this billing error. Please review the related transaction in your system to verify the inaccuracy. A prompt refund of the incorrect charge or an adjustment on my account would be highly appreciated.\\n\\nFor your reference, my account details are as follows: Name: <name>, Phone number: <tel_num>. I would also appreciate if you could keep me updated about the status of this inquiry.\\n\\nThank you for your prompt attention to this matter. I look forward to your resolution.\\n\\nSincerely,\\n<name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer reports an incorrect charge for an unauthorized Google Workspace Business Standard subscription and requests a refund or account adjustment."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0003",
+      "input": "Assistance Required for Debugging Extensions Issue Dear Customer Support Team,\\n\\nI hope this message finds you well. I am writing to request assistance with a recurring issue I have encountered while attempting to debug extensions within the Visual Studio Code 1.70 environment. The process has proven to be unexpectedly challenging, impacting my productivity significantly. I understand that the debugging capabilities are meant to enhance the development process, but currently, I am unable to leverage these tools effectively due to persistent issues.\\n\\nDetails of the Issue:\\n- Software Version: Visual Studio Code 1.70\\n- Nature of the Issue: Difficulty debugging extensions\\n\\nDespite trying multiple troubleshooting steps, such as restarting the IDE, updating extensions, and adjusting the launch configuration settings, the problem remains unresolved. It would be greatly beneficial for me to receive guidance tailored specifically to this version.\\n\\nCould you please provide insights into any known issues with this version, or perhaps suggest a more effective approach to resolve this problem? If needed, I can share additional details regarding the error messages or the nature of the extensions being used.\\n\\nThank you for your attention to this matter. I look forward to your timely response so that I can resume my development tasks without further hindrance.\\n\\nBest regards,\\n\\n<name>\\n\\n<name> <acc_num>\\n<tel_num>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer requests help debugging recurring extension issues in Visual Studio Code 1.70 that are hurting productivity."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0004",
+      "input": "Connectivity Issue with Printer Dear Tech Online Store Customer Support,\\n\\nI am writing to express my concerns regarding an issue I've been experiencing with my Canon PIXMA MG3620 wireless printer. Despite multiple attempts, my devices fail to establish a stable connection with the printer, thus hindering my ability to successfully execute mobile printing tasks. Considering the pivotal role this printer plays in my daily activities, this issue has been quite an inconvenience.\\n\\nI have ensured that my wireless network is operational and that the printer is within range. Unfortunately, even after restarting both the printer and my mobile devices, the connectivity problem persists. Additionally, I have consulted the printer’s manual and troubleshooting guide, attempting to resolve the issue on my own to no avail.\\n\\nI kindly request your guidance regarding this situation, as the lack of stable connectivity is quite disruptive. Please let me know if there are specific steps or settings I should try or if a software update is necessary. I am available for further troubleshooting assistance at your earliest convenience.\\n\\nThank you for addressing my concern. I look forward to your prompt response.\\n\\nBest regards,\\n\\n<name>\\n<tel_num>\\n<email_address>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer cannot establish a stable wireless connection to a Canon PIXMA MG3620 printer, disrupting mobile printing."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0005",
+      "input": "Request for changes in Jira user permissions setup Dear Customer Support Team,\\n\\nI hope this message finds you well. I am writing to request assistance in modifying the user permissions setup within our Jira project management software, specifically version 8.20. My name is <name>, and I am the project manager at <company_name>, overseeing the project installations and configurations for our team.\\n\\nCurrently, we are encountering a few challenges with the permissions in our Jira setup. We have recently expanded our team and brought in a few new members whose roles do not seem to align perfectly with our existing permissions configuration. This has led to some difficulties in terms of task allocations and access rights, hindering our workflow efficiency.\\n\\nWe would appreciate it if you could provide guidance on how to adjust these permissions to better fit our current team structure. In particular, it would be beneficial if new hires' roles could be set up with a more appropriate permission level concerning EEF access and task management. I believe a reassessment of our current permission schemes could help streamline our processes and prevent further access issues.\\n\\nCould you please advise us on the steps necessary to adjust these settings appropriately, or if there is a preferred onboarding procedure for aligning permission settings with role updates? Additionally, if there are templates or documentation available to assist us, we would be most grateful to receive those.\\n\\nThank you very much for your attention to this matter, and I look forward to your prompt response at your earliest convenience.\\n\\nWarm regards,\\n\\n<name>\\n<company_name>\\n<tel_num>\\n<acc_num>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Project manager requests changes to Jira 8.20 user permissions after expanding the team with new members."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0006",
+      "input": "Request for Billing Support Hello Customer Support Team,\\n\\nI am contacting you for help with some billing issues I have noticed concerning our AWS cloud computing services, specifically linked to the AWS Management Service. Our organization, <name> Tech Solutions, has recently received an invoice that seems to apply charges for services we did not use during the billing cycle. We have diligently tracked our usage and found no reason for the unanticipated fees linked to our account <acc_num>.\\n\\nOur billing statements show charges on various dates that require explanation. After scrutinizing the invoice, it appears there could be a problem regarding how the usage data has been documented or handled. We would be grateful for a comprehensive examination of our account and any updates on possible errors or inconsistencies.\\n\\nPlease get in touch with me at your earliest convenience at <tel_num> or via email to resolve this pressing issue. Thank you for your prompt attention to this concern.\\n\\nBest regards,\\n<name>\\nIT Manager, <name> Tech Solutions",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Organization disputes unexpected AWS charges for services it did not use and requests an investigation."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0007",
+      "input": "Request to Change Microsoft Office 365 Credentials Dear Customer Support, I am writing to request a change in my login credentials for Microsoft Office 365 as I have lost my password. Please assist me in resetting it as soon as possible. Thank you for your help. Sincerely, <name>.",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Customer lost their Microsoft Office 365 password and requests a credential reset."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0008",
+      "input": "Inquiries Regarding IT Solutions Hello, I have a few questions regarding your software development practices and would greatly appreciate any suggestions you may provide concerning server management. The service I am referring to is your IT Consulting Service. I look forward to your valuable advice and thank you for your support. Best regards, <name>.",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer asks about software development practices and server management for the IT Consulting Service."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0009",
+      "input": "Urgent Deployment Errors Dear Customer Support,\\n\\nI hope this message finds you well. I am writing to bring to your urgent attention a critical issue we are experiencing with our AWS infrastructure managed via your AWS Management Service. Recently, we've encountered deployment errors that have unfortunately resulted in significant application downtime. This is adversely affecting our business operations and needs immediate resolution.\\n\\nDespite our continuous efforts to troubleshoot, the root cause of these deployment errors remains elusive. Our development team has identified that the errors primarily occur during routine updates and deployments. Given the critical nature of this issue, we urgently request your expert intervention to diagnose and resolve the underlying problems swiftly.\\n\\nPlease advise us on the next steps and prioritize a support session with your technical team. You may reach me at <tel_num> or via email at <name>@example.com. Our account number with your service is <acc_num> for your reference. We highly appreciate your timely assistance and responsiveness to this urgent matter.\\n\\nThank you for your prompt attention.\\n\\nKind Regards,\\n\\n<name>\\n<Position>\\n<Company Name>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports urgent AWS deployment errors causing significant application downtime and needs immediate resolution."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0010",
+      "input": "Urgent: Immediate Support Needed for Cisco Router ISR4331 Dear IT Services Customer Support,\\n\\nI am writing to bring to your immediate attention the connectivity issues affecting our enterprise network, linked to the Cisco Router ISR4331. Despite our efforts to remedy the situation internally, the problem persists and is severely impacting our network performance, causing a substantial disruption to our operations. We urgently require your technical expertise and support to resolve this ongoing issue. Please arrange for your technical team to address this matter as soon as possible. We would also appreciate guidance on how to prevent similar issues in the future. Please let us know a convenient time for you to assess the situation remotely or on-site.\\n\\nThank you for your prompt assistance in this critical matter.\\n\\nBest regards,\\n\\n<name>\\n<acc_num>\\n<tel_num>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer urgently needs support for connectivity issues with a Cisco ISR4331 router disrupting enterprise network performance."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0011",
+      "input": "Urgent: Assistance Needed for MySQL 8.0.30 Data Loss Recovery Hello, we encountered severe data loss in MySQL 8.0.30. Immediate technical support is essential to recover the affected data promptly. Thank you for your urgent attention.",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports severe data loss in MySQL 8.0.30 and urgently needs support to recover the affected data."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0012",
+      "input": "Frequent Issues with Cisco Router ISR4331 Dear Customer Support Team,\\n\\nI am reaching out to report intermittent connection issues we are experiencing with our Cisco Router ISR4331, which has been affecting the reliability of our local area network within our office. These issues have been disrupting our day-to-day operations, creating inefficiencies and delays.\\n\\nOur office heavily relies on a stable network connection for activities such as file sharing, collaborative projects, and client communication. However, the frequent connection drops are impacting our productivity significantly. We have performed preliminary diagnostics including rebooting the router multiple times and checking all physical connections, but the problem persists.\\n\\nWe kindly request your assistance in diagnosing and resolving this issue promptly. We would appreciate guidance on any troubleshooting steps we might have overlooked or if a technical intervention is necessary. If you need any further information or logs from the router to assist in your diagnostics, please let us know.\\n\\nThank you for your attention to this matter. We look forward to your swift resolution.\\n\\nBest regards,\\n\\n<name>\\n<name> Solutions Team\\nContact: <tel_num>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports intermittent connection drops with a Cisco ISR4331 router disrupting office LAN reliability and productivity."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0013",
+      "input": "Urgent: Access Control Issues in Jira Software Hello Customer Support Team,\\n\\nI hope this message finds you well. I am reaching out to report a significant issue concerning user permissions on the Jira Software platform, specifically version 8.20. Unfortunately, this issue is affecting our ability to effectively manage access control within the project management tool.\\n\\nSeveral team members have reported problems where certain user permissions are either not being granted or are revoked unexpectedly. This inconsistency has impeded our workflow and caused disruptions in project completion timelines. We have attempted to manually reset the permissions to their appropriate levels; however, these changes are not reflected on the platform.\\n\\nGiven the nature of our business, the necessity for efficient and accurate access control to manage ongoing projects is critical. We kindly request your immediate attention in investigating this problem and providing a solution that will restore proper permissions and functional integrity without compromising the security and operational efficiency of our projects.\\n\\nCould you please guide us on any potential troubleshooting steps that could be taken on our end while awaiting your technical assessment? Your prompt assistance in rectifying this issue would be greatly appreciated.\\n\\nThank you in advance for your support and understanding.\\n\\nBest regards,\\n\\n<name>\\n<company>\\n<tel_num>\\n<email_address>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Customer reports inconsistent permission grants and revocations in Jira 8.20 that are disrupting access control and workflow."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0014",
+      "input": "iPad Pro Concern Dear Support Team,\\n\\nI have recently acquired my iPad Pro 2021, and unfortunately, it seems to have some problems. There appears to be a flaw in the device. Could you please help me rectify this issue at your earliest convenience? My account number is <acc_num>. You can reach me at <tel_num>.\\n\\nThanks,\\n<name>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer reports a flaw in their recently purchased iPad Pro 2021 and asks for help resolving it."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0015",
+      "input": "Login Issues in Jira Software Dear Customer Support Team,\\n\\nI hope this message finds you well. I am writing to bring to your attention an issue we are facing with Jira Software 8.20. Our users are currently unable to log in due to a server error that appears directly on the login screen. This error has been persistent since yesterday and is affecting our productivity significantly as many team members rely on Jira for project management tasks.\\n\\nWe have tried clearing the cache and even accessing it via different browsers, but the problem persists. Could you please assist us with troubleshooting this server problem? Any guidance or timeframe for resolution would be greatly appreciated, as our work critically depends on seamless access to Jira Software.\\n\\nThank you very much for your prompt attention to this matter.\\n\\nBest regards,\\n<name>\\n<acc_num>\\n<email>\\n<tel_num>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Users cannot log in to Jira Software 8.20 due to a persistent server error on the login screen."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0016",
+      "input": "Dear Tech Online Store Customer Support,\\n\\nI am writing to address an urgent issue regarding an incorrect billing on my account. Last month, I purchased an Adobe Photoshop 2024 subscription through your platform, but I have noticed discrepancies in the billing amount. The charge appears to be higher than what was initially agreed upon during the purchase confirmation.\\n\\nMy account number is <acc_num> and the unexpected charge was posted on my statement dated <date>. I am concerned with this error as it affected my bank balance unexpectedly. I kindly request a prompt review and adjustment of this charge. Please contact me at <email> or my phone number <tel_num> if further information is required.\\n\\nYour immediate attention to this matter would be greatly appreciated. Thank you for your cooperation.\\n\\nSincerely,\\n<name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer was charged more than agreed for an Adobe Photoshop 2024 subscription and requests a review and adjustment."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0017",
+      "input": "Urgent: Jira Access Issue Dear Customer Support,\\n\\nI am reaching out regarding an issue I am experiencing with Jira Software 8.20. My user account, <acc_num>, is currently unable to access the project management dashboard, which has hindered my ability to manage ongoing projects effectively. I suspect this may be related to account privileges as there have been no intentional restrictions on my end.\\n\\nThis issue is critical as it affects project timelines and coordination with my team. I would appreciate an urgent resolution to regain access. Additionally, please let me know if any updates need to be made to the current privacy or permission settings.\\n\\nThank you for your prompt attention to this matter.\\n\\nSincerely,\\n<name>\\n<tel_num>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Customer's Jira 8.20 account cannot access the project management dashboard, possibly due to account privileges."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0018",
+      "input": "Networking Issues with Cisco Router Dear Customer Support,\\n\\nI am reaching out to report recurring networking issues we've been experiencing with our Cisco Router ISR4331, which has been causing significant instability in internet connectivity for our users. Over the past few weeks, we've noticed that the router frequently loses connection, leading to extremely intermittent internet access across our systems. This problem is severely impacting our daily operations, productivity, and ability to service our clients efficiently.\\n\\nWe have attempted basic troubleshooting measures, such as rebooting the router and checking existing configurations, but the issues persist. According to a few support articles and forum discussions, the problem might be associated with certain firmware issues, which require more in-depth troubleshooting or possibly a firmware update.\\n\\nCould you please guide us on any specific diagnostic steps we should perform? We would greatly appreciate if a technical specialist could assist us in ensuring that this issue is addressed swiftly. Additionally, any information on potential temporary solutions while waiting for further assistance would be beneficial.\\n\\nThank you in advance for your prompt attention to this matter.\\n\\nBest regards,\\n\\n<name>\\n<name>'s IT Department\\n<tel_num>\\n<acc_num>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports recurring connection losses and unstable internet from a Cisco ISR4331 router, impacting daily operations."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0019",
+      "input": "Inquiry About Billing Discrepancy Dear Support Team,\\n\\nI trust you are well. I am contacting you to bring attention to a minor inconsistency I observed in my recent billing statement for the AWS Management Service. My account number is <acc_num>, and the corresponding transaction is from October 10, 2023.\\n\\nThere appears to be an unexpected charge on the bill that, judging by my preliminary review, does not align with my usage projections or subscription details. I believe this could be a minor oversight; however, I would genuinely appreciate a detailed breakdown of the charges to gain clarity.\\n\\nCould you please send me an itemized bill specifying the nature of the charges, the timeframes they cover, and any pertinent taxes or fees?\\n\\nI trust in your quick handling of this matter and await your comprehensive response. Should you require any additional information, feel free to contact me at <tel_num> or reply to this email.\\n\\nThank you for your assistance.\\n\\nWarm regards,\\n\\n<name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer asks for a detailed breakdown of an unexpected AWS charge on their October 10, 2023 billing statement."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0020",
+      "input": "Inquiry About IT Consulting Dear IT Services Customer Support,\\n\\nI am writing to inquire about the IT Consulting Service offerings and how they can benefit my general business needs. Specifically, I would like to understand more about the range of services you offer under IT Consulting and how these can be tailored to enhance my company's operations. It would be helpful to get detailed information on your approach to integrating technology solutions and any success stories that demonstrate tangible business improvements.\\n\\nAdditionally, please provide insights into cost structures and how the value of your service justifies the investment. Any brochures or resources you could share would be greatly appreciated.\\n\\nThank you for your assistance.\\n\\nBest regards,\\n<name>\\n<acc_num>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer inquires about IT Consulting Service offerings, pricing, and how they can benefit their business."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0021",
+      "input": "Urgent: Major Bug in Ticketing System Dear Customer Support,\\n\\nWe are experiencing significant workflow disruptions in our project management due to a major bug in the Jira Software 8.20 ticketing system. This issue requires your immediate attention for troubleshooting and resolution. Please provide an update at your earliest convenience as this impacts our daily operations severely.\\n\\nKindly prioritize this request.\\n\\nThank you.\\n\\nBest regards,\\n\\n<name>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports a major bug in the Jira 8.20 ticketing system causing significant workflow disruptions."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0022",
+      "input": "Login Issues with Office 365 Dear Tech Online Store Customer Support,\\n\\nI am writing to report a login issue with my Microsoft Office 365 account. I am unable to access my emails and cloud services due to this issue, which has been affecting my work. I have verified my credentials, and they are correct. Despite this, the problem persists.\\n\\nCould you please assist me in resolving this matter urgently? My account username is <name>, and my account number is <acc_num>. Additionally, if necessary, feel free to reach me at <tel_num>.\\n\\nThank you for your prompt attention to this problem.\\n\\nKind regards,\\n<name>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Customer cannot log in to Microsoft Office 365 despite correct credentials and urgently needs access restored."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0023",
+      "input": "Issues with Slack connectivity affecting team communication today Having trouble accessing channels and dispatching messages.",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports Slack connectivity issues preventing channel access and message sending, disrupting team communication."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0024",
+      "input": "Dear Customer Support,\\n\\nWe are writing to inform you about a critical issue we experienced with the AWS Management Service. It seems there was a misconfiguration in the AWS settings, which led to a service outage affecting our website availability for several hours. We need urgent assistance to resolve this issue and prevent any future occurrences.\\n\\nPlease look into this matter at your earliest convenience. Your prompt action will be much appreciated. Thank you for your support.\\n\\nBest regards,\\n\\n<name>\\n<acc_num>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer reports an AWS misconfiguration that caused a service outage affecting their website for several hours."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0025",
+      "input": "Request for Modifications in IT Support Packages Dear Customer Support, \\n\\nI hope this message finds you well. My name is <name> and I am reaching out to discuss potential modifications to our existing IT support packages. We have received a client request that entails updated software deployments and enhanced server capabilities. This particularly affects our IT Consulting Service. Please provide us with detailed options and pricing for these modifications at your earliest convenience. You can reach me at <tel_num> for further discussions. Looking forward to your quick response.\\n\\nWarm regards,\\n\\n<name>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer requests modified IT support packages with updated software deployments and enhanced server capabilities, plus pricing."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0026",
+      "input": "Assistance with Printer Setup Hello customer support, I need help changing my Canon PIXMA MG3620 printer setup for wireless printing. Please provide step-by-step instructions for configuration. Look forward to your prompt response. Thank you, <name>, account <acc_num>.",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer requests step-by-step instructions to reconfigure a Canon PIXMA MG3620 printer for wireless printing."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0027",
+      "input": "Client can't log in to Jira Software 8.20.",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Client is unable to log in to Jira Software 8.20."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0028",
+      "input": "Issues with Slack connection affecting team communication today Channels are inaccessible, and messages cannot be sent.",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports Slack channels are inaccessible and messages cannot be sent, affecting team communication."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0029",
+      "input": "Update Required: Billing Information for Google Workspace Dear Customer Support Team,\\n\\nI hope this email finds you well. I am writing to request guidance on updating my billing information for our company's Google Workspace Business Standard services. Currently, my records indicate that my current billing details are outdated, potentially affecting our, thus requiring your assistance to ensure a seamless transition.\\n\\nFor reference, my account number is <acc_num>, and the registered email for these services is <email>. I would like to confirm the appropriate procedure for updating our billing details in your system to avoid any disruption to these essential services. Please guide me on the specific form or platform section where we need to enter the new information or if there is any additional documentation needed during this process.\\n\\nAdditionally, if there are any potential limitations concerning billing updates during business hours or any expected delay in updating the system digitally, I would appreciate your immediate notification ahead of the process. Our intent is to ensure that all billing issues concerning our Google Workspace Business Standard remain up-to-date, ensuring no interruption in services and continuing our collaboration smoothly and efficiently.\\n\\nI appreciate your timely assistance in this matter and look forward to your prompt response. Should you need further details or verification, feel free to reach me directly at <tel_num> during business hours.\\n\\nThank you for your support.\\n\\nBest regards,\\n\\n<name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer requests guidance on updating outdated billing information for Google Workspace Business Standard."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0030",
+      "input": "Billing Issues on AWS Services Dear Customer Support,\\n\\nI am writing to bring to your attention unexpected charges that have appeared on my account related to your AWS Management Service. I noticed these charges in the most recent billing cycle and am concerned about their origin. The account number associated with these charges is <acc_num>. I kindly request that you investigate the discrepancies and provide an explanation or resolution at your earliest convenience. Please feel free to contact me at <tel_num> if you need any additional information. Thank you for your prompt attention to this matter.\\n\\nBest regards,\\n<name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer reports unexpected AWS charges and requests an investigation and explanation of the discrepancies."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0031",
+      "input": "Urgent: Jira Ticket System Disruption Hello Customer Support Team,\\n\\nI am writing to express our concern regarding the current unavailability of the Jira ticket system, which is severely impacting our project management efforts. We have observed that since this morning, the Jira platform, specifically version 8.20, has been inaccessible, causing significant disruption across our active projects. As a critical tool within our software development lifecycle, the absence of this resource is causing our teams to experience major setbacks in managing project tasks, communication, and deadlines effectively.\\n\\nThe disruption is affecting multiple teams, resulting in an inability to track issue progress, assign tasks, or update ongoing project details. Collaborations have come to a standstill, which is worrying considering the time-sensitive nature of several of our projects currently in the pipeline.\\n\\nGiven the urgency of this issue, we kindly request a swift investigation and resolution to restore full service as soon as possible. If there are any interim solutions or workarounds we could implement while the system is being repaired, please advise. Additionally, further details outlining the estimated resolution time would allow us to better manage internal resources and project timelines during this disruption.\\n\\nPlease feel free to reach out if any additional details or error logs are needed from our side to expedite troubleshooting. We look forward to your prompt response to minimize any further interruptions.\\n\\nThank you for your immediate attention to this pressing matter.\\n\\nBest regards,\\n\\n<name>\\n<company_name> | Phone: <tel_num> \\nEmail: <email>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports the Jira 8.20 ticket system is inaccessible, severely disrupting project management."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0032",
+      "input": "Payment Options Inquiry Dear Tech Online Store Customer Support,<br><br> I hope this email finds you well. I am writing to request detailed information regarding the various payment options available for purchasing a license for Adobe Photoshop 2024. I am particularly interested in knowing if there are any installment or subscription-based payment plans available, and what the associated costs would be if such options exist.<br><br> Additionally, I would appreciate it if you could provide details on any current promotions or discounts that may apply to the Adobe Photoshop 2024 purchase. Understanding these options will greatly assist in my decision-making process.<br><br> Thank you in advance for your assistance, and I look forward to your prompt response.<br><br> Sincerely,<br> <name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer requests details on payment options, installment plans, promotions, and discounts for an Adobe Photoshop 2024 license."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0033",
+      "input": "Inquiry regarding IT Consulting Services Dear Customer Support,\\n\\nMy name is <name>, and I am interested in learning more about your IT Consulting Services, specifically focusing on software development and server administration. I would appreciate detailed information about the services offered, pricing, and engagement process. Could you please provide this information, or direct me to a representative who could assist with my inquiry?\\n\\nThank you for your assistance.\\n\\nBest regards,\\n\\n<name>\\n<tel_num>\\n<email_address>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer requests information about IT Consulting Services covering software development, server administration, pricing, and engagement."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0034",
+      "input": "Inquiry about Billing Discrepancy in AWS Hello Customer Support, I am writing to inquire about a billing discrepancy in my AWS Management Service account. Could you assist with a cost optimization analysis for my recent invoices? My account number is <acc_num>. Please contact me at <tel_num>. Thank you, <name>.",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer asks about an AWS billing discrepancy and requests a cost optimization analysis of recent invoices."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0035",
+      "input": "Challenges Accessing the HR System for Consultants Dear IT Support Team,\\n\\nI hope you are doing well. I am reaching out to report a technical problem that arose when our consultant, <name>, tried to log into the HR system as part of a review process aimed at improving the efficiency of our software development team. Access to the HR system is essential for our consultant to evaluate and plan our software development requirements accurately.\\n\\nRegrettably, our consultant encountered considerable difficulties while attempting to log in. The system repeatedly produced an error, blocking any progress in our evaluation. This predicament has significantly hindered our advancement, as reviewing our current IT setup is crucial for identifying future enhancements.\\n\\nWe would greatly appreciate your swift support in rectifying this login issue. Restoring access is vital to ensure that our assessment can continue smoothly and efficiently. Feel free to reach out to us at <tel_num> or reply to this email as soon as possible. We count on your expertise to resolve this concern expeditiously.\\n\\nThank you for your immediate attention to this pressing matter.\\n\\nBest regards,\\n\\n<name>\\nAccount Number: <acc_num>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Consultant cannot log into the HR system due to repeated errors, blocking a review of software development requirements."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0036",
+      "input": "Intermittent Connectivity Issues Dear IT Services Support Team,\\n\\nI'm writing to report intermittent connectivity issues we're experiencing with AWS services that are impacting our overall cloud infrastructure performance and reliability. This concerns the AWS Management Service. We have observed these issues for the past week, and they are affecting our operational efficiency. We kindly request your assistance in diagnosing and resolving the problem at your earliest convenience. Your prompt response will be highly appreciated. Thank you.\\n\\nBest regards,\\n<name>\\n\\nContact: <tel_num>\\nAccount: <acc_num>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports intermittent AWS connectivity issues affecting cloud infrastructure performance over the past week."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0037",
+      "input": "Connectivity Issue with ISR4331 Dear Customer Support,\\n\\nI hope this message finds you well. I am writing to inform you that our Cisco ISR4331 router is experiencing intermittent connectivity issues. This has significantly affected our enterprise network performance and secure access. We kindly request your assistance to resolve this issue as soon as possible.\\n\\nThank you for your prompt attention to this matter.\\n\\nBest regards,\\n\\n<name>\\n<acc_num>\\n<tel_num>",
+      "expected_output": {
+        "category": "technical",
+        "one_line_summary": "Customer reports intermittent connectivity issues with a Cisco ISR4331 router affecting enterprise network performance."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0038",
+      "input": "Challenges with Access and Permissions Dear IT Support Team,\\n\\nI am encountering difficulties concerning the setup of server access, which is affecting my login capabilities and permissions. It appears that the problem may originate from your IT Consulting Services. We require support to overcome these hurdles and ensure seamless server access. Please let me know the steps we can implement to quickly resolve this issue. You can reach me at <tel_num>, and my account number is <acc_num>. Thank you for your rapid assistance in restoring my full access. I truly appreciate your attention to this matter.\\n\\nBest regards,\\n<name>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Customer has server access and permission problems affecting login and requests help restoring full access."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0039",
+      "input": "Overcharged for Microsoft Office 365 Subscription Dear Customer Support Team,\\n\\nI hope this message finds you well. I am writing to bring to your attention an issue regarding my recent charge for the monthly subscription of Microsoft Office 365 under the account number <acc_num>. I have noticed that I was overcharged on my last billing statement. I was expecting to be billed the usual amount, but it seems a higher amount was deducted. Could you please investigate and provide an immediate reimbursement for the excess charge? Your prompt attention to this matter is highly appreciated.\\n\\nThank you for your support.\\n\\nBest regards,\\n\\n<name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer was overcharged on their monthly Microsoft Office 365 subscription and requests a reimbursement."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0040",
+      "input": "Server Performance Optimization Consultation Dear IT Services Customer Support Team,\\n\\nI hope this message finds you well. I am reaching out to seek your expert advice on optimizing server performance in our small business environment. We are experiencing challenges in efficiently managing our IT resources, and I believe your renowned IT Consulting Service could be immensely beneficial for us.\\n\\nOur team has identified a few key areas where performance could be improved, but we lack the in-depth knowledge required to implement effective solutions without external expert guidance. Specifically, we are looking to enhance server response times, manage workloads more effectively, and ensure sustainable scalability as our business grows.\\n\\nCould you please provide insights into how your consulting services could assist us in addressing these issues? Additionally, I would appreciate any recommendations on the most suitable packages or solutions you offer that would align with our specific needs. I am looking forward to discussing this further and would be grateful if we could arrange a consultation at your earliest convenience.\\n\\nThank you for your assistance.\\n\\nBest Regards,\\n<name>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Small business seeks expert advice on optimizing server performance and managing IT resources via the IT Consulting Service."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0041",
+      "input": "Dear Customer Support, I am writing to request changes to our AWS server configuration for enhanced application scalability. We believe our cloud infrastructure could be better optimized for efficient performance. The affected product is the AWS Management Service. Current issues include slow response times and occasional downtime. Please advise us on the best practices to resolve these issues and implement the necessary configuration adjustments. We are hopeful for a swift response to address the scaling and reliability challenges. Thank you for your assistance in optimizing our cloud infrastructure. Sincerely, <name>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer requests AWS server configuration changes to improve application scalability, response times, and reliability."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0042",
+      "input": "Investigation into AWS Billing Discrepancy Dear Customer Support,\\n\\nI am writing to request a detailed review of a billing discrepancy related to my recent invoice for AWS Management Service. My account number is <acc_num>. I noticed some unexpected charges that do not align with my understanding or usage of the service. Given this, I require a comprehensive breakdown and explanation of the incurred costs, especially around the new charges that have appeared. \\n\\nCould you please provide a detailed analysis, clarifying each line item and elucidating these discrepancies? A swift response to highlight any miscalculations or clarify the charges would be greatly appreciated, as it will assist in ensuring accurate billing and maintaining trust in your services.\\n\\nPlease let me know if any additional information is required from my side to facilitate a thorough investigation.\\n\\nLooking forward to your prompt response.\\n\\nThank you.\\n\\nBest Regards,\\n<name>\\nContact: <tel_num>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer requests a detailed review and breakdown of unexpected AWS charges on their invoice."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0043",
+      "input": "Consultation Request for Project Efficiency Improvement Dear IT Services Support Team,\\n\\nI am writing to seek your expert advice and consultation for a software development project we are currently managing. We are experiencing several challenges that have hindered our progress, and we believe your IT Consulting Service could provide the much-needed guidance to address these issues efficiently.\\n\\nOur main areas of concern include architectural planning, performance optimization, and server setup. Despite our best efforts, aligning the software development lifecycle with our project goals has proven to be difficult. We believe that with your expertise in server setup and optimization, you could help us devise a strategy that ensures our servers are scalable and efficient, aligning perfectly with our operational requirements.\\n\\nMoreover, insights into best practices for infrastructure management and deployment would be instrumental in overcoming our existing bottlenecks. We are particularly interested in understanding how to fine-tune our architecture for better load balancing and enhanced reliability.\\n\\nCould we arrange a consultation session with your experts to explore potential solutions and strategies? We believe this partnership could prove to be beneficial in achieving our project objectives effectively and efficiently.\\n\\nThank you very much in advance for your assistance and for providing us with a potential roadmap to success. Please let me know a convenient time for us to discuss this further.\\n\\nLooking forward to your response.\\n\\nBest regards,\\n\\n<name>\\n<company_name>\\n<email_address>\\n<tel_num>",
+      "expected_output": {
+        "category": "general",
+        "one_line_summary": "Customer seeks IT consulting guidance on architecture, performance optimization, and server setup for a software project."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0044",
+      "input": "Unexpected renewal issue with Office 365 subscription Dear Tech Online Store Customer Support, I hope this message finds you well. I am writing to bring to your attention a billing issue associated with my account <acc_num>. Recently, an unexpected renewal charge for my Microsoft Office 365 subscription appeared on my statement, despite my previous cancellation request. On <date>, I contacted your support team regarding the cancellation of this subscription. I even received confirmation from a representative named <name>. However, I was surprised to find the charge still present within my latest billing cycle, reflecting a charge date of <date>. My payment was processed via the credit card ending in <last_four_digits>, and I want to avoid any inconvenience or confusion going forward. Hence, I would appreciate your immediate attention to reverse this charge credited to my account and ensure my subscription does not renew further. I've appreciated your support team's assistance in the past and hope for a swift resolution of this issue. Please feel free to contact me at <email_address> or <tel_num> should you require any further clarification. Thank you for your prompt attention to this matter. Kind regards, <name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer was charged an unexpected Office 365 renewal despite a confirmed cancellation and requests resolution."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0045",
+      "input": "Jira Software Login Connection Issues Dear Customer Support Team,\\n\\nI am writing to inform you of an ongoing issue we are facing with our Jira Software version 8.20 deployment. Our team members have reported consistent unresponsiveness in the system, particularly when attempting to log in. The situation has been quite frustrating since it appears to be a sever connection time-out issue, causing significant disruptions to our workflow.\\n\\nDespite several attempts, the users find themselves stuck during the log-in process, unable to access critical project management functions. We rely heavily on Jira for facilitating our daily tasks and maintaining project timelines. These disruptions are causing delays and impacting our team's productivity.\\n\\nCould you please investigate this issue on priority and provide a resolution at the earliest? We suspect this might be an underlying server connection issue or perhaps a configuration that needs adjustment. If you could share any troubleshooting steps or insights that we could relay to our IT department to assist in resolving this, it would be appreciated.\\n\\nThank you for your prompt attention to this matter. Looking forward to your swift response and a resolution so we can restore seamless access to our system.\\n\\nBest regards,\\n<name>\\n<acc_num>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Team members experience login time-outs and unresponsiveness in Jira Software 8.20, disrupting workflow."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0046",
+      "input": "Outlook Access Issue Dear Customer Support Team,\\n\\nI am writing to seek your assistance regarding a recurring issue I have been facing with accessing my Outlook email. Every time I attempt to log in, I am continuously prompted to enter my password, despite ensuring that it is correct and up to date. This issue pertains to my Microsoft Office 365: Email Client, which as you would appreciate, is crucial for my daily operations.\\n\\nThis persistent password prompt is not just disrupting my workflow, but it also raises concerns over whether there might be an underlying issue with my account. I have tried several troubleshooting steps, including resetting my password and checking my internet connection, but the problem remains unsolved. Additionally, I have ensured that my application is updated to the latest version.\\n\\nCould you please investigate this issue and provide guidance on any potential solutions? I am eager to resolve this as soon as possible to reinstate my usual efficiency levels. My account number is <acc_num>, and I have attached any error screenshots that might be pertinent.\\n\\nPlease feel free to reach out to me at <tel_num> should you require any more information or clarification.\\n\\nThank you for your attention to this matter.\\n\\nBest regards,\\n\\n<name>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Customer is repeatedly prompted for their password when accessing Outlook on Microsoft Office 365 despite correct credentials."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0047",
+      "input": "Billing Issue Hello Customer Support, I hope this message finds you well. I am writing to report an incorrect billing issue with my account <acc_num>, specifically concerning the AWS Management Service. It seems there are discrepancies between the charges and my actual usage, and I would appreciate a detailed clarification. Could you please provide a breakdown of the service usage and the corresponding charges? Please contact me at your earliest convenience at <tel_num>. Thank you for addressing this matter promptly. Best regards, <name>.",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer reports AWS charges that do not match actual usage and requests a usage and charge breakdown."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0048",
+      "input": "Billing Error Needs Review Dear Tech Online Store Support, I am writing to express my concern regarding an unexpected charge that appeared on my recent billing statement for my Google Workspace Business Standard subscription under account number <acc_num>. It seems there is a discrepancy, as it does not align with the regular charges that I have been expecting. The statement lists charges that I did not authorize nor anticipate. Considering the importance of rectifying billing errors in a timely manner, I urge you to look into this matter with the highest priority. Kindly provide a detailed breakdown of these charges and any additional explanations that might clarify why these unexpected fees have emerged. I request a review into this case at your earliest convenience. In addition, could you also evaluate any possible resolutions or compensatory measures suitable for this incident? I look forward to your swift response to address and resolve this perplexing issue with the billing system. Thank you for your immediate attention and assistance. Sincerely, <name>, Contact: <tel_num>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer reports an unauthorized unexpected charge for Google Workspace Business Standard and requests a detailed review."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0049",
+      "input": "Dear IT Services support team, Our staff is experiencing Outlook login failures through the organization’s email portal. This issue is severely impacting internal communications. We request an urgent fix to restore functionality. Regards, <name>",
+      "expected_output": {
+        "category": "account",
+        "one_line_summary": "Staff experience Outlook login failures through the organization's email portal, severely impacting internal communications."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    },
+    {
+      "id": "TC-0050",
+      "input": "Clarification Needed on Invoice Charge Dear Customer Support,\\n\\nI noticed a charge labeled 'Jira Software 8.20 license' on my recent invoice. Could you please clarify what this charge entails? I haven't requested additional licenses. Thank you.\\n\\nBest regards,\\n<name>",
+      "expected_output": {
+        "category": "billing",
+        "one_line_summary": "Customer asks for clarification of an unexpected 'Jira Software 8.20 license' charge on their invoice."
+      },
+      "expected_difficulty": 0,
+      "edge_case_type": null,
+      "notes": ""
+    }
+  ]
+}
