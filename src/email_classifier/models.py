@@ -7,7 +7,7 @@ Category = Literal["billing", "technical", "account", "general"]
 
 
 class PromptConfig(BaseModel):
-    """The prompt under test. Phase 2 will load these from versioned YAML files."""
+    """The prompt under test, loaded from a versioned YAML file."""
 
     version: str
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
