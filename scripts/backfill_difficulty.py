@@ -44,7 +44,7 @@ from email_classifier.difficulty import (  # noqa: E402
 )
 from email_classifier.models import ClassifierError  # noqa: E402
 
-DEFAULT_DATASET = REPO_ROOT / "data" / "eval" / "dataset_v0.1.0.json"
+DEFAULT_DATASET = REPO_ROOT / "data" / "eval" / "dataset_v0.1.1.json"
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
