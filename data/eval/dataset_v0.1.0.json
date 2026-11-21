@@ -9,9 +9,10 @@
         "category": "general",
         "one_line_summary": "Customer asks general questions about software development and server administration for the IT Consulting Service."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.4814,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'general'. Cosine scores between embeddings: s_top=0.6632 (email vs inferred label), s_lab=0.7013 (inferred label vs true label). difficulty_score=0.4814, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0002",
@@ -20,9 +21,10 @@
         "category": "billing",
         "one_line_summary": "Customer reports an incorrect charge for an unauthorized Google Workspace Business Standard subscription and requests a refund or account adjustment."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5365,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'general' disagrees with true label 'billing'. Cosine scores between embeddings: s_top=0.5886 (email vs inferred label), s_lab=0.6312 (inferred label vs true label). difficulty_score=0.5365, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0003",
@@ -31,9 +33,10 @@
         "category": "technical",
         "one_line_summary": "Customer requests help debugging recurring extension issues in Visual Studio Code 1.70 that are hurting productivity."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3443,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0004",
@@ -42,9 +45,10 @@
         "category": "general",
         "one_line_summary": "Customer cannot establish a stable wireless connection to a Canon PIXMA MG3620 printer, disrupting mobile printing."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3496,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0005",
@@ -53,9 +57,10 @@
         "category": "account",
         "one_line_summary": "Project manager requests changes to Jira 8.20 user permissions after expanding the team with new members."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3538,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0006",
@@ -64,9 +69,10 @@
         "category": "billing",
         "one_line_summary": "Organization disputes unexpected AWS charges for services it did not use and requests an investigation."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3426,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0007",
@@ -75,9 +81,10 @@
         "category": "account",
         "one_line_summary": "Customer lost their Microsoft Office 365 password and requests a credential reset."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3395,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0008",
@@ -86,9 +93,10 @@
         "category": "general",
         "one_line_summary": "Customer asks about software development practices and server management for the IT Consulting Service."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3421,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0009",
@@ -97,9 +105,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports urgent AWS deployment errors causing significant application downtime and needs immediate resolution."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3319,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0010",
@@ -108,9 +117,10 @@
         "category": "technical",
         "one_line_summary": "Customer urgently needs support for connectivity issues with a Cisco ISR4331 router disrupting enterprise network performance."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3539,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0011",
@@ -119,9 +129,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports severe data loss in MySQL 8.0.30 and urgently needs support to recover the affected data."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3533,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0012",
@@ -130,9 +141,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports intermittent connection drops with a Cisco ISR4331 router disrupting office LAN reliability and productivity."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3429,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0013",
@@ -141,9 +153,10 @@
         "category": "account",
         "one_line_summary": "Customer reports inconsistent permission grants and revocations in Jira 8.20 that are disrupting access control and workflow."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5368,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'account'. Cosine scores between embeddings: s_top=0.5870 (email vs inferred label), s_lab=0.6203 (inferred label vs true label). difficulty_score=0.5368, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0014",
@@ -152,9 +165,10 @@
         "category": "general",
         "one_line_summary": "Customer reports a flaw in their recently purchased iPad Pro 2021 and asks for help resolving it."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.4939,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'general'. Cosine scores between embeddings: s_top=0.6116 (email vs inferred label), s_lab=0.7013 (inferred label vs true label). difficulty_score=0.4939, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0015",
@@ -163,9 +177,10 @@
         "category": "account",
         "one_line_summary": "Users cannot log in to Jira Software 8.20 due to a persistent server error on the login screen."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5286,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'account'. Cosine scores between embeddings: s_top=0.6069 (email vs inferred label), s_lab=0.6203 (inferred label vs true label). difficulty_score=0.5286, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0016",
@@ -174,9 +189,10 @@
         "category": "billing",
         "one_line_summary": "Customer was charged more than agreed for an Adobe Photoshop 2024 subscription and requests a review and adjustment."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5349,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'general' disagrees with true label 'billing'. Cosine scores between embeddings: s_top=0.5842 (email vs inferred label), s_lab=0.6312 (inferred label vs true label). difficulty_score=0.5349, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0017",
@@ -185,9 +201,10 @@
         "category": "account",
         "one_line_summary": "Customer's Jira 8.20 account cannot access the project management dashboard, possibly due to account privileges."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3545,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0018",
@@ -196,9 +213,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports recurring connection losses and unstable internet from a Cisco ISR4331 router, impacting daily operations."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3413,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0019",
@@ -207,9 +225,10 @@
         "category": "billing",
         "one_line_summary": "Customer asks for a detailed breakdown of an unexpected AWS charge on their October 10, 2023 billing statement."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3389,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0020",
@@ -218,9 +237,10 @@
         "category": "general",
         "one_line_summary": "Customer inquires about IT Consulting Service offerings, pricing, and how they can benefit their business."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3496,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0021",
@@ -229,9 +249,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports a major bug in the Jira 8.20 ticketing system causing significant workflow disruptions."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3389,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0022",
@@ -240,9 +261,10 @@
         "category": "account",
         "one_line_summary": "Customer cannot log in to Microsoft Office 365 despite correct credentials and urgently needs access restored."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5428,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'account'. Cosine scores between embeddings: s_top=0.5871 (email vs inferred label), s_lab=0.6203 (inferred label vs true label). difficulty_score=0.5428, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0023",
@@ -251,9 +273,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports Slack connectivity issues preventing channel access and message sending, disrupting team communication."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.336,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0024",
@@ -262,9 +285,10 @@
         "category": "general",
         "one_line_summary": "Customer reports an AWS misconfiguration that caused a service outage affecting their website for several hours."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.4826,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'general'. Cosine scores between embeddings: s_top=0.6400 (email vs inferred label), s_lab=0.7013 (inferred label vs true label). difficulty_score=0.4826, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0025",
@@ -273,9 +297,10 @@
         "category": "general",
         "one_line_summary": "Customer requests modified IT support packages with updated software deployments and enhanced server capabilities, plus pricing."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.333,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0026",
@@ -284,9 +309,10 @@
         "category": "technical",
         "one_line_summary": "Customer requests step-by-step instructions to reconfigure a Canon PIXMA MG3620 printer for wireless printing."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.4965,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'general' disagrees with true label 'technical'. Cosine scores between embeddings: s_top=0.5898 (email vs inferred label), s_lab=0.7013 (inferred label vs true label). difficulty_score=0.4965, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0027",
@@ -295,9 +321,10 @@
         "category": "account",
         "one_line_summary": "Client is unable to log in to Jira Software 8.20."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3605,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0028",
@@ -306,9 +333,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports Slack channels are inaccessible and messages cannot be sent, affecting team communication."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.337,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0029",
@@ -317,9 +345,10 @@
         "category": "billing",
         "one_line_summary": "Customer requests guidance on updating outdated billing information for Google Workspace Business Standard."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5384,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'general' disagrees with true label 'billing'. Cosine scores between embeddings: s_top=0.5743 (email vs inferred label), s_lab=0.6312 (inferred label vs true label). difficulty_score=0.5384, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0030",
@@ -328,9 +357,10 @@
         "category": "billing",
         "one_line_summary": "Customer reports unexpected AWS charges and requests an investigation and explanation of the discrepancies."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5313,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'general' disagrees with true label 'billing'. Cosine scores between embeddings: s_top=0.6058 (email vs inferred label), s_lab=0.6312 (inferred label vs true label). difficulty_score=0.5313, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0031",
@@ -339,9 +369,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports the Jira 8.20 ticket system is inaccessible, severely disrupting project management."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3395,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0032",
@@ -350,9 +381,10 @@
         "category": "billing",
         "one_line_summary": "Customer requests details on payment options, installment plans, promotions, and discounts for an Adobe Photoshop 2024 license."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.332,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0033",
@@ -361,9 +393,10 @@
         "category": "general",
         "one_line_summary": "Customer requests information about IT Consulting Services covering software development, server administration, pricing, and engagement."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3384,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0034",
@@ -372,9 +405,10 @@
         "category": "general",
         "one_line_summary": "Customer asks about an AWS billing discrepancy and requests a cost optimization analysis of recent invoices."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.344,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0035",
@@ -383,9 +417,10 @@
         "category": "account",
         "one_line_summary": "Consultant cannot log into the HR system due to repeated errors, blocking a review of software development requirements."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3422,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0036",
@@ -394,9 +429,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports intermittent AWS connectivity issues affecting cloud infrastructure performance over the past week."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3433,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0037",
@@ -405,9 +441,10 @@
         "category": "technical",
         "one_line_summary": "Customer reports intermittent connectivity issues with a Cisco ISR4331 router affecting enterprise network performance."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.343,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0038",
@@ -416,9 +453,10 @@
         "category": "account",
         "one_line_summary": "Customer has server access and permission problems affecting login and requests help restoring full access."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.326,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0039",
@@ -427,9 +465,10 @@
         "category": "billing",
         "one_line_summary": "Customer was overcharged on their monthly Microsoft Office 365 subscription and requests a reimbursement."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3547,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0040",
@@ -438,9 +477,10 @@
         "category": "general",
         "one_line_summary": "Small business seeks expert advice on optimizing server performance and managing IT resources via the IT Consulting Service."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3468,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0041",
@@ -449,9 +489,10 @@
         "category": "general",
         "one_line_summary": "Customer requests AWS server configuration changes to improve application scalability, response times, and reliability."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3443,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0042",
@@ -460,9 +501,10 @@
         "category": "billing",
         "one_line_summary": "Customer requests a detailed review and breakdown of unexpected AWS charges on their invoice."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3481,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0043",
@@ -471,9 +513,10 @@
         "category": "general",
         "one_line_summary": "Customer seeks IT consulting guidance on architecture, performance optimization, and server setup for a software project."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3538,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0044",
@@ -482,9 +525,10 @@
         "category": "billing",
         "one_line_summary": "Customer was charged an unexpected Office 365 renewal despite a confirmed cancellation and requests resolution."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5409,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'general' disagrees with true label 'billing'. Cosine scores between embeddings: s_top=0.5640 (email vs inferred label), s_lab=0.6312 (inferred label vs true label). difficulty_score=0.5409, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0045",
@@ -493,9 +537,10 @@
         "category": "account",
         "one_line_summary": "Team members experience login time-outs and unresponsiveness in Jira Software 8.20, disrupting workflow."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5302,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'account'. Cosine scores between embeddings: s_top=0.6065 (email vs inferred label), s_lab=0.6203 (inferred label vs true label). difficulty_score=0.5302, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0046",
@@ -504,9 +549,10 @@
         "category": "account",
         "one_line_summary": "Customer is repeatedly prompted for their password when accessing Outlook on Microsoft Office 365 despite correct credentials."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3527,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0047",
@@ -515,9 +561,10 @@
         "category": "billing",
         "one_line_summary": "Customer reports AWS charges that do not match actual usage and requests a usage and charge breakdown."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3437,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     },
     {
       "id": "TC-0048",
@@ -526,9 +573,10 @@
         "category": "billing",
         "one_line_summary": "Customer reports an unauthorized unexpected charge for Google Workspace Business Standard and requests a detailed review."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5296,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'general' disagrees with true label 'billing'. Cosine scores between embeddings: s_top=0.6098 (email vs inferred label), s_lab=0.6312 (inferred label vs true label). difficulty_score=0.5296, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0049",
@@ -537,9 +585,10 @@
         "category": "account",
         "one_line_summary": "Staff experience Outlook login failures through the organization's email portal, severely impacting internal communications."
       },
-      "expected_difficulty": 0,
-      "edge_case_type": null,
-      "notes": ""
+      "expected_difficulty": 0.5365,
+      "edge_case_type": "label_disagreement",
+      "notes": "Edge case: inferred label 'technical' disagrees with true label 'account'. Cosine scores between embeddings: s_top=0.5823 (email vs inferred label), s_lab=0.6203 (inferred label vs true label). difficulty_score=0.5365, embedding_model=gemini-embedding-001.",
+      "is_edge_case": true
     },
     {
       "id": "TC-0050",
@@ -548,9 +597,10 @@
         "category": "billing",
         "one_line_summary": "Customer asks for clarification of an unexpected 'Jira Software 8.20 license' charge on their invoice."
       },
-      "expected_difficulty": 0,
+      "expected_difficulty": 0.3197,
       "edge_case_type": null,
-      "notes": ""
+      "notes": "",
+      "is_edge_case": false
     }
   ]
 }
